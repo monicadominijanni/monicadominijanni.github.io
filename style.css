@@ -218,7 +218,7 @@ section.alt { background: var(--surface); border-top: 1px solid var(--border); b
 /* ---------- Contact ---------- */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 18px;
   margin-top: 12px;
 }
@@ -226,11 +226,11 @@ section.alt { background: var(--surface); border-top: 1px solid var(--border); b
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 20px 14px;
   text-align: center;
 }
 .contact-item .label { font-size: 13px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px; }
-.contact-item .value { font-weight: 600; }
+.contact-item .value { font-weight: 600; font-size: 14.5px; white-space: nowrap; }
 
 /* ---------- Footer ---------- */
 footer {
