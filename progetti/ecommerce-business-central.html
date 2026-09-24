@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept: E-commerce + Business Central | Monica Dominijanni</title>
+<meta name="description" content="Progetto concettuale: come collegare un e-commerce a Business Central evitando doppie immissioni ed errori di magazzino.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <div class="brand">Monica Dominijanni</div>
+    <a class="back-link" href="../index.html#progetti">← Tutti i progetti</a>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <div class="cs-meta">
+      <span class="tag gold">Concept</span>
+      <span class="tag">Business Central</span>
+      <span class="tag">E-commerce</span>
+    </div>
+    <h1>E-commerce + Business Central: un flusso che non si rompe tra ordine e magazzino</h1>
+    <p class="lede">Un progetto concettuale che unisce le due parti del mio lavoro: la lettura dei processi aziendali e l'esecuzione digitale. Pensato per un'azienda reale che vendesse online e usasse Business Central come gestionale.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+
+    <div class="cs-note">
+      <strong>Progetto concettuale:</strong> non è un'integrazione realmente sviluppata per un cliente, ma uno scenario che ricostruisco sulla base della mia esperienza diretta con Business Central e con la costruzione di e-commerce, per mostrare come ragiono quando questi due mondi devono parlarsi.
+    </div>
+
+    <div class="cs-block">
+      <h2>Lo scenario</h2>
+      <p>Una PMI B2B vende online e usa Business Central per gestire magazzino, ordini e fatturazione. Il sito e-commerce, però, è stato messo online come "vetrina a parte": chi inserisce l'ordine sul sito e chi lo evade in magazzino lavorano di fatto su due sistemi separati.</p>
+    </div>
+
+    <div class="cs-block">
+      <div class="cs-two-col">
+        <div class="box problem">
+          <h3>Dove nasce l'attrito</h3>
+          <p style="margin:0;">Gli ordini online vengono re-inseriti a mano in Business Central. Le giacenze di magazzino non sono aggiornate in tempo reale sul sito, con il rischio di vendere prodotti non più disponibili. Le fatture vengono generate separatamente, con margine di errore tra i due sistemi.</p>
+        </div>
+        <div class="box approach">
+          <h3>Cosa cambierei</h3>
+          <p style="margin:0;">Un flusso in cui l'ordine e-commerce entra direttamente in Business Central, la disponibilità di magazzino viene letta dall'ERP e mostrata sul sito, e la fatturazione nasce da un'unica fonte di verità — eliminando la doppia immissione e il disallineamento tra i due sistemi.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-block">
+      <h2>Il flusso, in sintesi</h2>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flusso: cliente ordina online, l'e-commerce riceve l'ordine, sincronizzazione con l'ERP, Business Central gestisce magazzino e fatturazione, il cliente riceve conferma e spedizione">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--ink-faint)"></path>
+            </marker>
+          </defs>
+
+          <!-- connectors -->
+          <line x1="165" y1="100" x2="205" y2="100" stroke="var(--ink-faint)" stroke-width="2" marker-end="url(#arrow)"></line>
+          <line x1="360" y1="100" x2="400" y2="100" stroke="var(--ink-faint)" stroke-width="2" marker-end="url(#arrow)"></line>
+          <line x1="555" y1="100" x2="595" y2="100" stroke="var(--ink-faint)" stroke-width="2" marker-end="url(#arrow)"></line>
+          <line x1="750" y1="100" x2="790" y2="100" stroke="var(--ink-faint)" stroke-width="2" marker-end="url(#arrow)"></line>
+
+          <!-- box 1: Cliente -->
+          <rect x="15" y="50" width="150" height="100" rx="12" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"></rect>
+          <text x="90" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="var(--ink)">Cliente</text>
+          <text x="90" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" fill="var(--ink-soft)">ordina online</text>
+
+          <!-- box 2: E-commerce -->
+          <rect x="210" y="50" width="150" height="100" rx="12" fill="var(--surface)" stroke="var(--border)" stroke-width="1.5"></rect>
+          <text x="285" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="var(--ink)">E-commerce</text>
+          <text x="285" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" fill="var(--ink-soft)">riceve l'ordine</text>
+
+          <!-- box 3: Sincronizzazione -->
+          <rect x="405" y="50" width="150" height="100" rx="12" fill="rgba(184,135,63,.12)" stroke="var(--gold)" stroke-width="1.5"></rect>
+          <text x="480" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="var(--ink)">Sincronizzazione</text>
+          <text x="480" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" fill="var(--ink-soft)">ordine ↔ ERP</text>
+
+          <!-- box 4: Business Central -->
+          <rect x="600" y="50" width="150" height="100" rx="12" fill="var(--surface)" stroke="var(--border)" stroke-width="1.5"></rect>
+          <text x="675" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="var(--ink)">Business Central</text>
+          <text x="675" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" fill="var(--ink-soft)">magazzino, fatture</text>
+
+          <!-- box 5: Cliente riceve -->
+          <rect x="795" y="50" width="150" height="100" rx="12" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"></rect>
+          <text x="870" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="var(--ink)">Cliente</text>
+          <text x="870" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" fill="var(--ink-soft)">conferma e spedizione</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="cs-block">
+      <h2>Perché serve capire l'ERP per progettare un e-commerce (e viceversa)</h2>
+      <p>Un designer che non ha mai lavorato con un gestionale disegna un bel carrello e si ferma lì. Chi ha passato anni dentro Business Central sa che il punto critico non è la pagina prodotto: è cosa succede un secondo dopo il click su "acquista" — se quell'ordine resta isolato sul sito o entra davvero nel flusso che governa magazzino, produzione e fatturazione dell'azienda. È lì che si vede se un e-commerce è stato pensato per durare o solo per essere bello.</p>
+    </div>
+
+    <div class="cs-nav-end">
+      <a href="../index.html#progetti">← Tutti i progetti</a>
+      <a href="../index.html#contatti">Parliamo del tuo caso →</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Monica Dominijanni</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
