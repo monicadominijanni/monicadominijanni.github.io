@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Erbe del Tempio — Caso studio | Monica Dominijanni</title>
-<meta name="description" content="Costruzione di un e-commerce in affiliazione su Shopify: codice personalizzato, SEO, Search Console e Google Analytics, tracciamento dei click in uscita.">
+<meta name="description" content="Sito in affiliazione sulle erbe officinali, costruito prima su Shopify e poi rifatto direttamente nel codice: costi ridotti di oltre il 90%, SEO e Search Console.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
@@ -21,75 +21,90 @@
 <header class="cs-hero">
   <div class="wrap">
     <div class="cs-meta">
-      <span class="tag">E-commerce</span>
-      <span class="tag">Progetto reale, personale</span>
+      <span class="tag">Sito in affiliazione</span>
+      <span class="tag">Progetto reale</span>
+      <span class="tag">Personale</span>
     </div>
-    <h1>Erbe del Tempio — un e-commerce costruito da zero, dal codice alla visibilità</h1>
-    <p class="lede">Un progetto personale in ambito affiliazione (erbe e tisane), che ho usato come banco di prova per portare avanti da sola l'intero percorso di un e-commerce: struttura del sito, codice, SEO e analisi dei dati.</p>
+    <h1>Erbe del Tempio — un sito in affiliazione, costruito due volte</h1>
+    <p class="lede">Un progetto personale per costruire da sola tutta la filiera: struttura, codice, SEO e misurazione. Nato su Shopify, è stato poi rifatto direttamente nel codice: oggi costa oltre il 90% in meno.</p>
   </div>
 </header>
 
 <section>
   <div class="wrap">
 
-    <div class="cs-note">
-      <strong>Nota di trasparenza:</strong> non è un lavoro commissionato da un cliente, è un progetto che ho ideato e costruito in autonomia — anche per questo lo trovo un esempio onesto di cosa so fare quando gestisco un progetto digitale dall'inizio alla fine, inclusi gli imprevisti.
+    <div class="cs-block">
+      <p><strong>Non è un lavoro per un cliente.</strong> L'ho ideato e costruito io, e lo presento come esempio onesto, anche nelle scelte che ho poi rivisto.</p>
     </div>
 
     <div class="cs-block">
-      <h2>Cosa ho costruito</h2>
-      <ul>
-        <li>Un negozio Shopify con sezioni <strong>hero</strong> e <strong>mission</strong> scritte da zero in HTML/CSS personalizzato (custom Liquid), non con template preconfezionati.</li>
-        <li>Una sezione "Enciclopedia delle Erbe" pensata come contenuto editoriale a supporto del catalogo prodotti, pubblicata in modo incrementale.</li>
-        <li>Un modello di affiliazione, dove i link ai prodotti rimandano al sito partner che gestisce l'acquisto vero e proprio.</li>
-      </ul>
-      <div class="shot-grid" style="margin-top:20px;">
-        <figure class="shot-figure">
-          <img src="../assets/erbe/hero.jpg" alt="Hero della homepage di Erbe del Tempio, con video di sfondo e call to action 'Consulta le Erbe'">
-          <figcaption>Sezione hero, custom Liquid con video di sfondo</figcaption>
-        </figure>
-        <figure class="shot-figure">
-          <img src="../assets/erbe/mission.jpg" alt="Sezione mission del sito, con tre card su tisane, prodotti selezionati e rimedi naturali">
-          <figcaption>Sezione mission, tre card editoriali</figcaption>
-        </figure>
-        <figure class="shot-figure">
-          <img src="../assets/erbe/encyclopedia.jpg" alt="Pagina Enciclopedia delle Erbe con campo di ricerca e risultato Biancospino">
-          <figcaption>Enciclopedia delle erbe, con ricerca</figcaption>
-        </figure>
-        <figure class="shot-figure">
-          <img src="../assets/erbe/detail.jpg" alt="Pagina di dettaglio dell'erba Biancospino, con immagine e scheda descrittiva">
-          <figcaption>Scheda di dettaglio di una singola erba</figcaption>
-        </figure>
+      <h2>Prima: il negozio su Shopify</h2>
+      <p>La prima versione era un negozio Shopify, con sezioni hero e mission scritte da zero in HTML e CSS (Liquid personalizzato), senza partire da un tema già pronto. A sostegno del catalogo c'era l'«Enciclopedia delle Erbe», contenuto editoriale pubblicato un po' alla volta. Il modello era l'affiliazione: i link dei prodotti portavano al sito di un partner, dove avveniva l'acquisto.</p>
+
+      <h3 style="margin-top:28px;">Le schermate della prima versione</h3>
+      <div class="shot-grid" style="align-items:start;">
+        <figure class="shot-figure"><a href="../assets/erbe/hero.jpg" target="_blank" rel="noopener"><img src="../assets/erbe/hero.jpg" alt="Sezione hero del primo sito su Shopify, con video di sfondo" loading="lazy"></a><figcaption>Sezione hero, custom Liquid con video di sfondo</figcaption></figure>
+        <figure class="shot-figure"><a href="../assets/erbe/mission.jpg" target="_blank" rel="noopener"><img src="../assets/erbe/mission.jpg" alt="Sezione mission con tre card editoriali" loading="lazy"></a><figcaption>Sezione mission, tre card editoriali</figcaption></figure>
+        <figure class="shot-figure"><a href="../assets/erbe/encyclopedia.jpg" target="_blank" rel="noopener"><img src="../assets/erbe/encyclopedia.jpg" alt="Enciclopedia delle erbe con ricerca" loading="lazy"></a><figcaption>Enciclopedia delle erbe, con ricerca</figcaption></figure>
+        <figure class="shot-figure"><a href="../assets/erbe/detail.jpg" target="_blank" rel="noopener"><img src="../assets/erbe/detail.jpg" alt="Scheda di dettaglio di una singola erba" loading="lazy"></a><figcaption>Scheda di dettaglio di una singola erba</figcaption></figure>
       </div>
     </div>
 
     <div class="cs-block">
       <h2>Un esempio di problem solving tecnico</h2>
-      <p>Durante lo sviluppo mi sono imbattuta in un errore di salvataggio nel codice del tema Shopify: un link che avevo modificato non si salvava, perché il file di configurazione è in realtà un JSON che racchiude l'HTML come stringa — e ogni virgoletta al suo interno deve essere "scappata" (<code>\"</code>) per non rompere la struttura del file. Ho individuato il punto esatto dell'errore, corretto la sintassi e verificato che il resto del codice restasse coerente con lo stesso stile di escaping. Un dettaglio piccolo, ma rappresentativo di come lavoro: non mi fermo davanti a un errore che non capisco, lo scompongo finché non torna leggibile.</p>
+      <p>Nel codice del tema Shopify un link modificato non si salvava. La causa era nel file di configurazione, che è un JSON e contiene l'HTML come testo: le virgolette interne vanno protette con il carattere di escape (<code>\"</code>). Ho trovato l'errore, corretto la sintassi e controllato che il resto del codice seguisse lo stesso criterio.</p>
+    </div>
+
+    <div class="cs-block">
+      <h2>Perché l'ho rifatto nel codice</h2>
+      <p>Shopify è uno strumento valido quando si vuole aggiornare un sito in autonomia, senza toccare il codice: è abbastanza intuitivo, ed è giusto che un servizio così abbia un costo. Per un sito in affiliazione che cambia poco, però, quel costo non era più proporzionato all'uso. Ho quindi ricostruito il sito direttamente nel codice e l'ho pubblicato su GitHub, comprando solo il dominio.</p>
+      <ul>
+        <li><strong>Prima</strong> — abbonamento Shopify da 27 € al mese, cioè 324 € all'anno.</li>
+        <li><strong>Dopo</strong> — solo il dominio: circa 5 € il primo anno e circa 15 € negli anni successivi, senza costi mensili. Il risparmio è di oltre il 90%.</li>
+      </ul>
+      <p>Il compromesso c'è, e lo dico volentieri: servono più strumenti e aggiornare il sito è meno intuitivo che con un CMS. È la stessa logica che seguiamo in Cartaforbicesasso: scegliere lo strumento in base a quello che serve davvero, senza spendere più del necessario.</p>
+    </div>
+
+    <div class="cs-block">
+      <h2>Dopo: il sito su codice</h2>
+      <p>Il nuovo sito, <a href="https://www.erbedeltempio.it" target="_blank" rel="noopener">erbedeltempio.it</a>, è scritto direttamente in HTML, CSS e JavaScript. Ha una home e l'enciclopedia con 196 erbe, ricercabili per nome o per uso. Ogni scheda raccoglie proprietà attribuite dalla tradizione, uso tradizionale e avvertenze, con etichette che distinguono l'uso tradizionale dall'evidenza preliminare. Ci sono le pagine Privacy, Cookie e la dichiarazione di affiliazione.</p>
+
+      <h3 style="margin-top:28px;">Le schermate del nuovo sito</h3>
+      <figure class="shot-single" style="max-width:100%;">
+        <a href="../assets/erbe-codice/home.jpg" target="_blank" rel="noopener"><img src="../assets/erbe-codice/home.jpg" alt="Home del nuovo sito Erbe del Tempio: titolo Erbe Magiche, un soffione sullo sfondo e il pulsante per esplorare le 196 erbe" loading="lazy"></a>
+        <figcaption>La home: immagine di apertura e accesso all'enciclopedia</figcaption>
+      </figure>
+      <figure class="shot-single" style="max-width:100%;margin-top:24px;">
+        <a href="../assets/erbe-codice/enciclopedia.jpg" target="_blank" rel="noopener"><img src="../assets/erbe-codice/enciclopedia.jpg" alt="Enciclopedia delle erbe con campo di ricerca e schede con foto, nome e descrizione breve" loading="lazy"></a>
+        <figcaption>L'enciclopedia con ricerca: le schede si filtrano mentre si scrive</figcaption>
+      </figure>
+      <figure class="shot-single" style="max-width:100%;margin-top:24px;">
+        <a href="../assets/erbe-codice/scheda.jpg" target="_blank" rel="noopener"><img src="../assets/erbe-codice/scheda.jpg" alt="Scheda di una singola erba con proprietà attribuite, uso tradizionale e avvertenze" loading="lazy"></a>
+        <figcaption>Scheda di una singola erba: proprietà, uso tradizionale e avvertenze</figcaption>
+      </figure>
     </div>
 
     <div class="cs-block">
       <h2>Visibilità e misurazione</h2>
       <ul>
-        <li><strong>Search Console</strong> collegata per monitorare l'indicizzazione e la presenza nei risultati di ricerca.</li>
-        <li><strong>Google Analytics (GA4)</strong> collegato tramite l'app Google &amp; YouTube, per leggere il traffico reale del sito.</li>
-        <li><strong>Tracciamento dei click in uscita</strong> verso il sito partner, per capire quali contenuti/prodotti generano più interesse — la vera "conversione" misurabile in un modello di affiliazione.</li>
-        <li>Attenzione consapevole alle policy di Google: ho scelto di <em>non</em> attivare le schede prodotto gratuite su Google Shopping, perché non compatibili con un modello di affiliazione in cui l'acquisto avviene su un altro dominio.</li>
+        <li><strong>Search Console</strong> — collegata al sito, con la sitemap inviata a Google per monitorare l'indicizzazione.</li>
+        <li><strong>Google Analytics</strong> — collegato al sito. Essendo appena attivato non ha ancora dati: la parte che conta è che la misurazione sia configurata.</li>
+        <li><strong>Google Shopping</strong> — ho scelto di non attivare le schede prodotto gratuite, perché in un modello in affiliazione l'acquisto avviene su un altro dominio.</li>
       </ul>
-      <figure class="shot-single" style="margin-top:18px;">
-        <img src="../assets/erbe/analytics.jpg" alt="Dashboard di Google Analytics 4 collegata al sito Erbe del Tempio">
-        <figcaption>La proprietà GA4 collegata al sito — appena attivata, ancora con pochissimi dati: la parte che conta qui è che la misurazione è configurata e funzionante.</figcaption>
+      <figure class="shot-single" style="max-width:100%;margin-top:20px;">
+        <a href="../assets/erbe-codice/search-console.jpg" target="_blank" rel="noopener"><img src="../assets/erbe-codice/search-console.jpg" alt="Google Search Console: sitemap inviata con stato Riuscita e 200 pagine rilevate" loading="lazy"></a>
+        <figcaption>La sitemap inviata a Google Search Console: stato «Riuscita», 200 pagine rilevate</figcaption>
       </figure>
     </div>
 
     <div class="cs-block">
       <h2>Perché lo racconto qui</h2>
-      <p>Questo progetto dimostra la parte "esecutiva" di quello che so fare: quando capisco cosa serve, non mi fermo alla teoria — costruisco, misuro, correggo. È il complemento naturale del lavoro di analisi dei processi che faccio con Cartaforbicesasso: lì leggo il processo, qui lo trasformo in qualcosa che funziona davvero online.</p>
+      <p>Questo progetto mostra due cose. La prima è l'esecuzione: dal codice alla pubblicazione, fino a SEO e misurazione. La seconda è il criterio con cui si sceglie lo strumento: un CMS come Shopify è la scelta giusta quando serve aggiornare in autonomia senza toccare il codice; per un sito che cambia poco, costruirlo nel codice ha ridotto i costi di oltre il 90%. È lo stesso ragionamento che applico ai processi aziendali nel lavoro con Cartaforbicesasso: prima si guarda cosa serve davvero, poi si decide.</p>
     </div>
 
     <div class="cs-nav-end">
       <a href="../index.html#progetti">← Tutti i progetti</a>
-      <a href="https://erbedeltempio.myshopify.com/" target="_blank" rel="noopener">Vai al sito Erbe del Tempio →</a>
+      <a href="https://www.erbedeltempio.it" target="_blank" rel="noopener">Vai al sito Erbe del Tempio →</a>
     </div>
 
   </div>
